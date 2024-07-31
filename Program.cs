@@ -4,8 +4,6 @@ using Spectre.Console.Rendering;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-#region Game Logic
-
 string[][] matrix =
     [
         [ "", "", "" ],
@@ -284,4 +282,3 @@ async Task ComputerMoves()
     CheckWinner();
 }
 
-#endregion
