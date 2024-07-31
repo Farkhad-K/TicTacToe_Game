@@ -14,16 +14,16 @@ This is a console-based TicTacToe Game developed in C#. The application allows u
 
 ## Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Farkhad-K/TicTacToe_Game.git
-  ```
+   ```bash
+     git clone https://github.com/Farkhad-K/TicTacToe_Game.git
+
 
 ## How to Compile and Run the Project
 1. After cloning the repository Navigate to the project directory.
 2. Then run following command
-    ```bash
-    dotnet run
-    ```
+    ```bash
+    dotnet run
+
 
 ## Usage
 1. You should enter a number in the range of 1 to 9 (which are the numbers of the cells).
