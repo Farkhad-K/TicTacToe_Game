@@ -1,4 +1,4 @@
-# Library Management Console Application
+# TicTacToe Console Application
 
 This is a console-based TicTacToe Game developed in C#. The application allows users to play against a computer. The application uses the [Spectre.Console](https://spectreconsole.net/) library for enhanced console input and output.
 
