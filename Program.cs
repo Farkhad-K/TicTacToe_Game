@@ -27,6 +27,11 @@ string userInput = isUserX ? "❌" : "⭕";
 var computerChar = isUserX ? "⭕" : "❌";
 var userChar = isUserX is false ? "⭕" : "❌";
 
+AnsiConsole.MarkupLine("Biron bir katakchani tanlash uchun, o'sha katakchani tepasidagi [green]raqamni[/] kiriting [gray](1-9)[/]\n");
+AnsiConsole.MarkupLine("O'yinni to'xtatish uchun esa [green]`q`[/] harfini kiritish yoki [green]`CTRL+C`[/] klavish kombinatsi bosish kerak\n");
+AnsiConsole.MarkupLine("O'yinni boshlash uchun istalgan klaviatura tugmasini bosing");
+Console.ReadKey();
+
 do
 {
     AnsiConsole.Clear();
@@ -39,7 +44,7 @@ do
 
     if (!computersTurn)
     {
-        inputBox = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+        inputBox = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
         UpdateGrid(inputBox, userInput);
         computersTurn = true;
     }
@@ -117,89 +122,106 @@ void UpdateGrid(string position, string content)
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "2":
             if (matrix[0][1] is "")
                 matrix[0][1] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
         case "3":
+
             if (matrix[0][2] is "")
                 matrix[0][2] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "4":
             if (matrix[1][0] is "")
                 matrix[1][0] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "5":
             if (matrix[1][1] is "")
                 matrix[1][1] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "6":
             if (matrix[1][2] is "")
                 matrix[1][2] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "7":
             if (matrix[2][0] is "")
                 matrix[2][0] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "8":
             if (matrix[2][1] is "")
                 matrix[2][1] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
             break;
+
         case "9":
             if (matrix[2][2] is "")
                 matrix[2][2] = content;
             else
             {
                 AnsiConsole.MarkupLine("[red]Bu katakcha bo'sh emas, boshqasini tanlang![/]");
-                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?(1-9):");
+                position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
                 UpdateGrid(position, content);
             }
+            break;
+
+        case "q":
+            break;
+
+        default:
+            AnsiConsole.MarkupLine("\n[red]Mavjud bo'lmagan katakchani tanladingiz, tekshirib qaytadan kiriting!!![/]\n");
+            position = AnsiConsole.Ask<string>($"Qaysi katakchaga {userChar} ni joylamoqchisiz?[gray](1-9)[/]:");
+            UpdateGrid(position, content);
             break;
     }
 }

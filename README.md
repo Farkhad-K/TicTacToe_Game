@@ -31,3 +31,4 @@ This is a console-based TicTacToe Game developed in C#. The application allows u
 
 ## Possible Errors
 1. "Bu katakcha bo'sh emas, boshqasini tanlang!" - which means the cell with the number that you submitted is not empty and you must enter another one.
+2. "Mavjud bo'lmagan katakchani tanladingiz, tekshirib qaytadan kiriting!!!" - it means that you possibly added more character(s) after a number or submited number is greater than 9.
